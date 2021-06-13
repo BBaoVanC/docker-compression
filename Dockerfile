@@ -1,6 +1,11 @@
 FROM alpine:edge
 LABEL MAINTAINER="bbaovanc@bbaovanc.com"
 
+# basic utilities
+RUN apk add git
+RUN apk add make
+RUN apk add parallel
+
 RUN apk add brotli
 RUN apk add bzip2
 RUN apk add gzip
