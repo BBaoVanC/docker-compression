@@ -28,7 +28,7 @@ jobs:
               push: true
               context: .
               file: Dockerfile
-              tags: bbaovanc/dotfiles:latest
+              tags: bbaovanc/compression:latest
 
         - name: Image digest
           run: echo ${{ steps.docker_build.outputs.digest }}
